@@ -1,16 +1,11 @@
 # README 
 
 
-generate_fasta_4_haplotype.R: this script was used to generate the fasta files for each of the target genes. Sample IDs were used as the sequence IDs. Strings "_maj" and "_min" were included as the suffix of the IDs for major and minor haplotypes, respectively. 
+The script `generate_fasta_4_haplotype.R` was utilized to create fasta files for each of the target genes, with sample IDs used as sequence IDs. The IDs for major and minor haplotypes were differentiated by adding "_maj" and "_min" as suffixes, respectively. 
 
-Based on the metadata of the samples, the sequences in the fasta files were seperated to seperate files based on their courtry origin. Sequences with 'N' were excluded. Only major haplotypes were included. 
+Using metadata from the samples, the fasta sequences were separated into individual files based on their country of origin, excluding sequences with 'N'. Only major haplotypes were included in the generated files.
 
-vaxpack_in_out_args.R: this R script was developed so that we can perform vaxpack analysis by providing comand line arguments.
+The R script `vaxpack_in_out_args.R` was developed to enable vaxpack analysis through command line arguments.
 
 
 
-Reference
-
-https://github.com/myonaung/Naung-et-al-2021
- 
-# Pf_capture_div_code
