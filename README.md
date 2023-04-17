@@ -7,7 +7,7 @@ Using metadata from the samples, the fasta sequences were separated into individ
 
 The R script `vaxpack_in_out_args.R` was developed to enable vaxpack analysis through command line arguments.
 
-The scripts utilized in this GitHub repository were built upon the extensive work of the authors from the GitHub repository located here. Credit is duly attributed to the original authors for their contributions.
+The scripts utilized in this GitHub repository were built upon the extensive work of the authors from the GitHub repository located [here](https://github.com/myonaung/Naung-et-al-2021). Credit is duly attributed to the original authors for their contributions.
 
 
 
