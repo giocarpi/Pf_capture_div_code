@@ -1,0 +1,10 @@
+## set high and low for bspectrum color
+ATOM      1  CA  LYS C   1       0.000   0.000   0.000  1.00 0
+C
+ATOM      2  CA  LYS C   2       0.000   2.000   0.000  1.00 1
+C
+ATOM      3  CA  LYS C   3       0.000   4.000   0.000  1.00 2
+C
+ATOM      4  CA  LYS C   4       0.000   6.000   0.000  1.00 3
+C
+

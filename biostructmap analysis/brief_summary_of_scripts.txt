@@ -1,0 +1,55 @@
+Brief description of scripts used in the analysis of vaccine candidates
+
+--- Scripts ---
+modify_pdb.R
+	Trimming fasta and pdb files to structured domains of proteins -- 
+	especially needed for AlphaFold models to trim off signal peptides, and
+	unresolved loop domains. Data stored in Final fasta folder.
+
+antibody_target_interfaces.R
+	Extracting the antibody-antigen interfaces for deposited structures in pdb.
+	Saves updated pdb for vizualizing pdbs, and saves tibble of interface residues
+	per antibody.
+
+run_tajima.py
+	Hosted in conda environment running Biostructmap package,
+	included here for completeness. Data from final_fasta folder is
+	uploaded to conda environment, and output of biostructmap is stored
+	in tajima_d_models folder.
+
+tajima_d_models/scale_up_pi_measure.R
+	Nucleotide diversity values were to low to be displayed in pymol.
+	This script takes log10 of original value and updates b-factor of
+	pdb column with this new value.
+
+explore_pi_results.R
+	Unpack nucleotide diversity results for each protein, 
+	join them into a large dataframe and save as combined_pi.rds.
+	This script also annotates which residues are found to be epitopes,
+	based on the results of antibody_target_interfaces.R.
+
+explore_tajima_results.R
+	Unpack tajima results. Join them to combined_pi.rds.
+	Save results as combined_pi_tajima_epitope2.rds
+
+supplemental_pi_and_taj_bins.R
+	Supplemental figure comparing whole protein pi and tajimas values,
+	versus the values of known epitope residues. Scores are binned to 
+	aid in understanding proteins with low vs high diversity, and weak vs
+	strong balancing selection
+
+locate_variable_positions.R
+	Finds positions with amino acid variability, 
+	adds this information to epitope tibbles, and adds this
+	information to combined_pi_tajima_epitope2.rds dataset
+
+rds_to_csv.R
+	Short script to save rds files as csv's for ease of sharing results
+
+
+
+
+
+
+
+
